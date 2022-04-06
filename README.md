@@ -1,3 +1,7 @@
+Trivia Game Web Application for JSC Hackathon 2022
+
+Run it at https://devpost.com/software/trip-to-the-moon
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
