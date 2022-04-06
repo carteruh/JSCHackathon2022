@@ -1,0 +1,249 @@
+.app {
+   height: 100vh;
+   display: flex;
+   background-color: #020230;
+   color: white;
+}
+
+.main {
+    width: 50%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #020230), url(assets/space_back.jpeg) center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.topMain {
+    height: 25%;
+    position: relative;
+}
+
+.timerMain {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid teal; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 100px;
+    position: absolute;
+    bottom: 10px;
+    left: 100px;
+}
+
+.bottomMain {
+    height: 75%;
+}
+
+.trivia {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.question {
+    width: 80%;
+    background: linear-gradient(#2E4053, #020F47);
+    border: 2px solid teal;
+    text-align: center;
+    padding: 20px; 
+    border-radius: 30px;
+    font-size: 30px;
+}
+
+.answers {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.answer {
+    width: 40%;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(#2E4053, #020F47);
+    border: 2px solid teal;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 300; 
+    cursor: pointer;
+    margin: 0px 10px 30px 10px;
+}
+
+.answer:hover, 
+.answer.active {
+    background: #020F47;
+}
+
+.answer.correct{
+    animation: correct 3s ease forwards;
+}
+
+@keyframes correct{
+    0%,
+    22%,
+    42% {
+        background: #020F47;
+    }
+    20%,
+    40%,
+    60% {
+        background: #2E4053;
+    }
+    62%,
+    100% {
+        background: teal;
+    }
+}
+
+.answer.wrong{
+    animation: wrong 3s ease forwards;
+}
+
+@keyframes wrong{
+    0%,
+    22%,
+    42% {
+        background: #020F47;
+    }
+    20%,
+    40%,
+    60% {
+        background: #2E4053;
+    }
+    62%,
+    100% {
+        background: #CF0000;
+    }
+}
+
+.rocket {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #020230), url(assets/moon2.png) center;
+}
+
+.topRocket {
+    height: 25%;
+    position: relative;
+}
+
+.bottomRocket {
+    height: 75%;
+}
+
+.pyramid {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.levelList {
+    list-style: none;
+    width: 100%;
+    padding: 20px;
+}
+
+.levelListItem {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.levelListItem.active {
+    background-color: teal;
+}
+
+.levelListItemNumber {
+    font-size: 20px;
+    font-weight: 100;
+    width: 30%;
+}
+
+.levelListItemAmount {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.endText{
+    display: flex; 
+    /* align-items: center;
+    justify-content: center; */
+    text-align: center;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+.start{
+    width: 350px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.startInput{
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+    border: 5px solid teal;
+    text-align: center;
+    font-size: 18px;
+}
+
+.startInput:focus {
+    outline: none;
+}
+
+.startButton {
+    width: 50%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+
+}
+
+.rockVid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 0px;
+
+}
+
+.title {
+    padding: 20px;
+    width: 100%;
+    font-size: 50px;
+    flex: display;
+    align-items: center;
+    text-align: center;
+}
